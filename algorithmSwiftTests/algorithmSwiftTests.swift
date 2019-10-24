@@ -11,6 +11,8 @@ import XCTest
 
 class algorithmSwiftTests: XCTestCase {
 
+    let p = PalindromePartitioning131();
+    
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.
     }
@@ -19,9 +21,21 @@ class algorithmSwiftTests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    
+    
+    func testPpartition() {
+        if let list = self.p.partition("aab") {
+            
+            let listSet = Set(list)
+            
+            var promis = Set<[String]>()
+            promis.insert(["a","a","b"]);
+            promis.insert(["aa","b"]);
+            assert(promis.isSubset(of: listSet)
+                && listSet.isSubset(of: promis))
+        } else {
+            assertionFailure()
+        }
     }
 
     func testPerformanceExample() {

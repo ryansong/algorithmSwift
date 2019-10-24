@@ -14,6 +14,8 @@
 		56F0C5102361CF570087F762 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56F0C50F2361CF570087F762 /* Preview Assets.xcassets */; };
 		56F0C5132361CF570087F762 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56F0C5112361CF570087F762 /* LaunchScreen.storyboard */; };
 		56F0C51E2361CF570087F762 /* algorithmSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56F0C51D2361CF570087F762 /* algorithmSwiftTests.swift */; };
+		56F0C52A2361CF9D0087F762 /* PalindromePartitioning131.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56F0C5292361CF9D0087F762 /* PalindromePartitioning131.swift */; };
+		56F0C52B2361CF9D0087F762 /* PalindromePartitioning131.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56F0C5292361CF9D0087F762 /* PalindromePartitioning131.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +40,7 @@
 		56F0C5192361CF570087F762 /* algorithmSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = algorithmSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		56F0C51D2361CF570087F762 /* algorithmSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = algorithmSwiftTests.swift; sourceTree = "<group>"; };
 		56F0C51F2361CF570087F762 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		56F0C5292361CF9D0087F762 /* PalindromePartitioning131.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PalindromePartitioning131.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +85,7 @@
 				56F0C5062361CF540087F762 /* AppDelegate.swift */,
 				56F0C5082361CF540087F762 /* SceneDelegate.swift */,
 				56F0C50A2361CF540087F762 /* ContentView.swift */,
+				56F0C5282361CF640087F762 /* Algorithm */,
 				56F0C50C2361CF570087F762 /* Assets.xcassets */,
 				56F0C5112361CF570087F762 /* LaunchScreen.storyboard */,
 				56F0C5142361CF570087F762 /* Info.plist */,
@@ -105,6 +109,14 @@
 				56F0C51F2361CF570087F762 /* Info.plist */,
 			);
 			path = algorithmSwiftTests;
+			sourceTree = "<group>";
+		};
+		56F0C5282361CF640087F762 /* Algorithm */ = {
+			isa = PBXGroup;
+			children = (
+				56F0C5292361CF9D0087F762 /* PalindromePartitioning131.swift */,
+			);
+			path = Algorithm;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -210,6 +222,7 @@
 			files = (
 				56F0C5072361CF540087F762 /* AppDelegate.swift in Sources */,
 				56F0C5092361CF540087F762 /* SceneDelegate.swift in Sources */,
+				56F0C52A2361CF9D0087F762 /* PalindromePartitioning131.swift in Sources */,
 				56F0C50B2361CF540087F762 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -218,6 +231,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				56F0C52B2361CF9D0087F762 /* PalindromePartitioning131.swift in Sources */,
 				56F0C51E2361CF570087F762 /* algorithmSwiftTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -374,7 +388,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.ryansong90.algorithmSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -394,7 +408,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.ryansong90.algorithmSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
